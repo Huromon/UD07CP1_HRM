@@ -9,10 +9,6 @@ import com.example.ud06cp00_hrm.databinding.ItemPersonaBinding
 
 
 class PersonaViewHolder(private val binding: ItemPersonaBinding) : ViewHolder(binding.root) {
-
-
-
-
     fun render(persona: Persona, onClickListener: (Persona) -> Unit) {
         binding.tvNombre.text = persona.nombre
         binding.tvDesc.text = persona.descripcion

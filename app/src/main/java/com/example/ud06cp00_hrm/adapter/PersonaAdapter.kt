@@ -26,7 +26,7 @@ class PersonaAdapter(
     companion object{
         private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<Persona>(){
             override fun areItemsTheSame(oldItem: Persona, newItem: Persona): Boolean =
-                oldItem.nombre == newItem.nombre
+                oldItem.correo == newItem.correo
 
             override fun areContentsTheSame(oldItem: Persona, newItem: Persona): Boolean =
                 oldItem == newItem

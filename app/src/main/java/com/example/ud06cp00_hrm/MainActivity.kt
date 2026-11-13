@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         binding.rvPersonas.layoutManager = layoutManager
         binding.rvPersonas.setHasFixedSize(true)
         binding.rvPersonas.itemAnimator = DefaultItemAnimator()
-        /* binding.rvFrutas.addItemDecoration(
+        /* binding.rvPersonas.addItemDecoration(
              DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
          )*/
         adapter = PersonaAdapter { persona -> onItemSelected(persona) }
